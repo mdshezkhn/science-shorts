@@ -1,0 +1,8 @@
+work/
+out/
+qa/
+analysis/
+__pycache__/
+*.mp3
+*.wav
+*.mp4

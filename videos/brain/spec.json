@@ -1,0 +1,33 @@
+{
+  "id": "brain",
+  "voice": "en-US-AndrewNeural",
+  "voice_rate": "-6%",
+  "tail": 2.6,
+  "ambience": "warm",
+  "amb_gain": 0.30,
+  "script": "In the first years of life, a child's brain builds a million new connections every second. Here's how. At birth, a baby already has nearly all its neurons — eighty-six billion of them. But they're barely connected. Then, the explosion. By age three, the brain holds a thousand trillion connections — twice as many as yours. That's why toddlers absorb three languages at once — and you struggle to finish one app. But here's the strange part. Around age ten, the brain begins deleting itself. Unused connections are pruned away — almost half of them. Use it, or lose it. What survives gets faster — wrapped in fatty insulation called myelin, so signals travel ten times quicker. The last part to finish is the prefrontal cortex — the bit that plans, focuses, and stops bad decisions. It isn't complete until age twenty-five. But brains don't wire themselves. Every conversation, every game of peek-a-boo, every story read aloud decides which connections survive. Neglect decides too. Because in the first years, a child's brain builds a million connections a second — and it's waiting for you.",
+  "meta": {
+    "seed": 3141592,
+    "brand": { "name": "AXIOM", "sub": "SCIENCE SHORTS" },
+    "tint": ["#170c06", "#040204"]
+  },
+  "meter": {
+    "eyebrow": "CHILD'S AGE",
+    "unit": "YRS",
+    "table": [[0, 0], [0.05, 0.5], [0.11, 1], [0.18, 3], [0.26, 5], [0.34, 7], [0.41, 10], [0.50, 12], [0.58, 15], [0.66, 20], [0.71, 25], [1.0, 25]]
+  },
+  "scenes": [
+    { "type": "neural", "t0f": 0.00, "t1f": 0.10, "params": { "mode": "grow", "bgTop": "#1a0e08", "bgBottom": "#070302", "node": "#ffd9a0", "edge": "#c97b3f", "glow": "#3a1c0c", "zoom": 1.10 } },
+    { "type": "neural", "t0f": 0.10, "t1f": 0.36, "params": { "mode": "full", "bgTop": "#200f06", "bgBottom": "#0a0402", "node": "#ffcf8f", "edge": "#d98f4f", "glow": "#4a2410", "signals": 9, "sigSpeed": 0.30, "zoom": 1.06, "panX": -24 } },
+    { "type": "neural", "t0f": 0.36, "t1f": 0.55, "params": { "mode": "prune", "bgTop": "#141019", "bgBottom": "#050308", "node": "#ffd9a0", "edge": "#8a93b8", "glow": "#241a2e", "signals": 4, "zoom": 1.08, "panX": 20 } },
+    { "type": "neural", "t0f": 0.55, "t1f": 0.76, "params": { "mode": "fast", "bgTop": "#0d1220", "bgBottom": "#03040a", "node": "#ffe9c4", "edge": "#9fb8ff", "glow": "#16243c", "signals": 8, "sigSpeed": 0.65, "sigHop": 4, "zoom": 1.05 } },
+    { "type": "neural", "t0f": 0.76, "t1f": 1.07, "params": { "mode": "exchange", "bgTop": "#1c0f08", "bgBottom": "#060302", "node": "#ffd9a0", "edge": "#d98f4f", "glow": "#3a1c0c", "signals": 5, "sigSpeed": 0.24, "zoom": 1.04, "panY": 12 } }
+  ],
+  "stats": [
+    { "at_word": "eighty-six", "eyebrow": "At birth", "lines": ["86 billion", "neurons"], "dur": 3.6 },
+    { "at_word": "trillion", "eyebrow": "By age 3", "lines": ["1,000 trillion", "connections"], "dur": 4.2 },
+    { "at_word": "deleting", "eyebrow": "Around age 10", "lines": ["Your brain starts", "deleting itself"], "dur": 4.0 },
+    { "at_word": "twenty-five", "eyebrow": "The planning brain", "lines": ["Not finished", "until 25"], "dur": 3.8 },
+    { "at_word": "peek-a-boo", "eyebrow": "What wires it", "lines": ["Serve and", "return"], "dur": 4.2 }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "blackhole",
+  "voice": "en-US-AndrewNeural",
+  "voice_rate": "-6%",
+  "tail": 2.6,
+  "ambience": "space",
+  "amb_gain": 0.34,
+  "script": "At the center of our galaxy sits a black hole — four million times the mass of the Sun. Here's what happens if you fall in. From a distance, the fall looks gentle. It isn't. As you get closer, something strange begins. To everyone watching from Earth, you slow down. Your clock ticks slower. And just before you reach the horizon, you appear to freeze — forever. They watch you fade from blue, to red, to nothing. But for you, nothing changes. You fall straight through. And here's the twist. If the black hole is big enough, you don't feel a thing — the gravity pulls your whole body at once. It's the small ones that turn you into spaghetti before you ever cross the horizon. Astronomers call it spaghettification. Inside, reality stops making sense. Space and time swap places. The singularity isn't a place ahead of you. It's a moment in your future — like tomorrow. Every direction you swim, steer, or fall leads there. Because a black hole isn't a hole. It's a future.",
+  "meta": {
+    "seed": 777001,
+    "brand": { "name": "AXIOM", "sub": "SCIENCE SHORTS" },
+    "tint": ["#0a0a1e", "#000004"]
+  },
+  "meter": {
+    "eyebrow": "Distance to event horizon",
+    "unit": "KM",
+    "table": [[0, 42000000], [0.20, 18000000], [0.38, 6000000], [0.52, 900000], [0.63, 120000], [0.68, 0], [1.0, 0]]
+  },
+  "scenes": [
+    { "type": "space", "t0f": 0.00, "t1f": 0.22, "params": {
+        "stars": 260, "drift": 12,
+        "nebulas": [
+          { "x": 0.30, "y": 0.30, "r": 0.5, "color": "#1a2a5e", "a": 0.22 },
+          { "x": 0.75, "y": 0.65, "r": 0.42, "color": "#4a1a2e", "a": 0.16 }
+        ] } },
+    { "type": "blackhole", "t0f": 0.22, "t1f": 0.66, "params": { "stars": 260, "r0": 50, "r1": 330, "spin": 1.1, "cy": 0.5, "diskColor": "#ff8c3a" } },
+    { "type": "warp", "t0f": 0.66, "t1f": 0.84, "params": { "stars": 240, "glowColor": "#8fc6ff" } },
+    { "type": "pulse", "t0f": 0.84, "t1f": 1.06, "params": { "glowColor": "#4a0e14", "ring": true, "ringColor": "#c0392b", "snow": 0.5 } }
+  ],
+  "stats": [
+    { "at_word": "million", "eyebrow": "Sagittarius A*", "lines": ["4,000,000 suns"], "dur": 3.6 },
+    { "at_word": "freeze", "eyebrow": "From outside", "lines": ["You freeze", "forever"], "dur": 3.6 },
+    { "at_word": "twist", "eyebrow": "The twist", "lines": ["You wouldn't", "feel it"], "dur": 3.8 },
+    { "at_word": "swap", "eyebrow": "Inside", "lines": ["Space and time", "swap places"], "dur": 3.8 },
+    { "at_word": "future", "eyebrow": "A black hole isn't a place", "lines": ["It's your future"], "dur": 4.2 }
+  ]
+}

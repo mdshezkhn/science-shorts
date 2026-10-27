@@ -1,0 +1,34 @@
+{
+  "id": "mariana",
+  "voice": "en-US-AndrewNeural",
+  "voice_rate": "-6%",
+  "tail": 2.6,
+  "ambience": "deep",
+  "amb_gain": 0.30,
+  "script": "This is the Mariana Trench — the deepest place on Earth. And if you fell from the surface to the bottom, here's what it would do to your body. The first two hundred meters are easy. This is the sunlight zone. Then the light dies. Completely. At two hundred meters, the pressure has doubled. Your eardrums stretch. Your lungs start to compress. By one thousand meters, you're in the midnight zone — water no sunlight has ever touched. Freezing, and one hundred times the pressure your body was built for. Here's the strange part. You wouldn't explode. Your body is mostly water — and water barely compresses. The real danger is the air inside you. Your lungs and your sinuses, collapsing flat. At six thousand meters, you enter the hadal zone — named after Hades, god of the underworld. And at the bottom, ten thousand nine hundred meters down, the pressure is eight tons pressing on every square inch of your body. No human was ever built to be here. And yet, in twenty twenty-three, scientists filmed a fish swimming at eight thousand three hundred meters — deeper than Everest is tall. Because even at the bottom of the Mariana Trench — the deepest place on Earth — life found a way.",
+  "meta": {
+    "seed": 20261026,
+    "brand": { "name": "AXIOM", "sub": "SCIENCE SHORTS" },
+    "tint": ["#0a2230", "#020a12"]
+  },
+  "meter": {
+    "eyebrow": "DEPTH",
+    "unit": "M",
+    "table": [[0, 0], [0.12, 40], [0.24, 200], [0.30, 320], [0.42, 1000], [0.55, 2600], [0.70, 6000], [0.84, 8800], [1.0, 10935]]
+  },
+  "scenes": [
+    { "type": "water", "t0f": 0.00, "t1f": 0.14, "params": { "top": "#3a7fa0", "bottom": "#0a2433", "rays": 0.85, "snow": 0.5, "darken": 0.55, "zoom": 1.06, "panY": -20 } },
+    { "type": "water", "t0f": 0.14, "t1f": 0.30, "params": { "top": "#21506c", "bottom": "#051724", "rays": 0.55, "rayFade": 1.0, "snow": 0.6, "darken": 0.35, "panY": 14 } },
+    { "type": "water", "t0f": 0.30, "t1f": 0.46, "params": { "top": "#0a2436", "bottom": "#020a12", "rays": 0.18, "rayFade": 1.0, "snow": 0.85, "darken": 0.4 } },
+    { "type": "abyss", "t0f": 0.46, "t1f": 0.66, "params": { "flicker": 5, "snow": 0.8, "glow": "#0a2a3a" } },
+    { "type": "walls", "t0f": 0.66, "t1f": 0.84, "params": { "speed": 150, "snow": 0.9, "glow": "#123243" } },
+    { "type": "abyss", "t0f": 0.84, "t1f": 1.06, "params": { "flicker": 4, "snow": 0.6, "life": true, "glow": "#0e1c28" } }
+  ],
+  "stats": [
+    { "at_word": "Completely", "eyebrow": "At 200 meters", "lines": ["Sunlight dies"], "dur": 3.4 },
+    { "at_word": "midnight", "eyebrow": "1,000 meters down", "lines": ["The midnight zone"], "dur": 3.6 },
+    { "at_word": "explode", "eyebrow": "The twist", "lines": ["You don't", "explode"], "dur": 4.0 },
+    { "at_word": "tons", "eyebrow": "At the bottom", "lines": ["8 tons", "per square inch"], "dur": 4.2 },
+    { "at_word": "scientists", "eyebrow": "Deepest fish ever filmed", "lines": ["8,336 m"], "dur": 4.4 }
+  ]
+}
