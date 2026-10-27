@@ -64,8 +64,10 @@ The full formula + topic queue + posting strategy: [`SCIENCE-SHORTS-PLAYBOOK.md`
 
 ## Branding
 
-`meta.brand` in each spec holds the top-left logo block — change `AXIOM` to
-your channel name. Fonts are vendored Oswald + system Georgia (no CDN at render time).
+`meta.brand` in each spec holds the top-left logo block — currently set to
+**MoInChina**. Change `meta.brand.name` / `sub` to rebrand; the underline
+scales with the name automatically. Fonts are vendored Oswald + system Georgia
+(no CDN at render time).
 
 ## Requirements
 
