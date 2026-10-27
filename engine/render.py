@@ -63,8 +63,9 @@ if __name__ == "__main__":
             page.evaluate("async () => { await Promise.all([document.fonts.load('700 104px Oswald'), document.fonts.load('500 34px Oswald'), document.fonts.load('400 42px Oswald'), document.fonts.load('46px Georgia')]); }")
             for k, t in enumerate(times):
                 page.evaluate("t => window.renderFrame(t)", t)
-                page.screenshot(path=out % (k + 1), type="png")
-                print(f"still t={t}s -> {out % (k + 1)}")
+                target = out % (k + 1) if "%" in out else str(Path(out).with_stem(f"{Path(out).stem}_{k + 1}"))
+                page.screenshot(path=target, type="png")
+                print(f"still t={t}s -> {target}")
             browser.close()
     else:
         render(spec, out, audio)

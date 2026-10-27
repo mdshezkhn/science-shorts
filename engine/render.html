@@ -470,7 +470,8 @@ function drawBrand(t){
   ctx.font='700 42px Oswald, "Arial Narrow", sans-serif';
   ctx.textAlign='left';
   let x=92;for(const ch of b.name){ctx.fillText(ch,x,212);x+=ctx.measureText(ch).width+7;}
-  ctx.fillStyle='rgba(255,255,255,0.85)';ctx.fillRect(92,228,132,3);
+  const nameW=Math.max(110,x-92-7);
+  ctx.fillStyle='rgba(255,255,255,0.85)';ctx.fillRect(92,228,nameW,3);
   ctx.fillStyle='rgba(255,255,255,0.5)';
   ctx.font='500 19px Oswald, "Arial Narrow", sans-serif';
   x=92;for(const ch of b.sub){ctx.fillText(ch,x,262);x+=ctx.measureText(ch).width+8;}
